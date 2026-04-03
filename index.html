@@ -12,28 +12,16 @@
 <script src="https://js.hsforms.net/forms/embed/v2.js"></script>
 
 <script>
-window.onload = function () {
+hbspt.forms.create({
+  region: "na1",
+  portalId: "3277480",
+  formId: "f66c7df7-5532-4822-bb5d-34b76d6ee51f",
+  target: "#form",
 
-  hbspt.forms.create({
-    region: "na1",
-    portalId: "3277480",
-    formId: "f66c7df7-5532-4822-bb5d-34b76d6ee51f",
-    target: "#form",
-
-    onFormReady: function($form) {
-
-      console.log("FORM READY ✔");
-
-      $form.find("input").css("border", "2px solid red");
-
-      // optional auto fill
-      $form.find('input[name="email"]').val("test@gmail.com");
-
-    }
-
-  });
-
-};
+  onFormReady: function($form) {
+    console.log("FORM READY ✔");
+  }
+});
 </script>
 
 </body>
