@@ -18,9 +18,11 @@ hbspt.forms.create({
   formId: "f66c7df7-5532-4822-bb5d-34b76d6ee51f",
   target: "#form",
 
-  onFormReady: function($form) {
-    console.log("FORM READY ✔");
-  }
+onFormReady: function($form) {
+
+  console.log($form.find("input").length);
+
+}
 });
 </script>
 
